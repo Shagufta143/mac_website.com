@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>mac_website</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href= 
+"https://fonts.googleapis.com/icon?family=Material+Icons" />
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+   background-image: linear-gradient(rgba(10,6,10,0.5),rgba(10,6,10,0.5)),url('https://lh3.googleusercontent.com/p/AF1QipOvC9s8NNf9GGLQZkz6o_jQ6eGfstWQspExZb63=s680-w680-h510');
+   background-position:cover;
+	text-align:center;
+	color:#fff;
+	}
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+	}
+nav{
+	display:flex;
+	padding:2% 6%;
+	justify-content:space-between;
+	align-items:center:
+	}
+nav img{
+	width:70px;
+}
+.nav-links{
+	flex:1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding:8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+}
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width:90%;
+	color:#fff;
+	position:absolute;
+	top:20%;
+	left=20%;
+	transform: translate(5%,40%);
+	text-align:center;
+}
+.text-box h1{
+	font-size:62px;
+}
+.text-box p{
+	margin:10px 0 40px;
+	font-size:14px;
+	color:#fff;
+}
+.hero-btn{
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.hero-btn:hover{
+	border:1px solid #f44336;
+	background: #f44336;
+	transition:1s;
+}
+
+nav .fa{
+	display: none;
+}
+
+@media(max-width:700px){
+	.text-box h1{
+	font-size:10px;
+	}
+	.nav-links ul li{
+		display:block;
+	}
+	.nav-links{
+		position:absolute;
+		background: #f44336;
+		height: 100vh;
+		width: 80px;
+		top:0;
+		right: -200px;
+		text-align: left;
+		z-index:1;
+		transition:1s;
+	}
+	nav .fa{
+		display:block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+}
+
+h1{
+	color:#fff;
+	font-size:30px;
+	font-weight:600;
+}
+p{
+	color:#fff;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+
+}
+	/*----- footer -----*/
+	.footer{
+		width:100%;
+		text-align:center;
+		margin-bottom:25px;
+		margin-top:100px;
+		padding:30px 0;
+	}
+	.footer:h2{
+		margin-bottom:25px;
+		margin-top:20px;
+		font-weight:800;
+		}
+	.android { 
+        background: #a4c639; 
+        color: white; 
+    } 
+ 
+    .facebook { 
+        background: #3b5998; 
+        color: white; 
+    }
+	/*----------about us page ----------*/
+	.sub-header{
+	height:50vh;
+	width:100%
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://t4.ftcdn.net/jpg/04/26/15/37/360_F_426153793_2ETWp9mwhamzfBG1u7KwRo3gTFmSFWz8.jpg');
+	background-position:cover;
+	text-align:center;
+	color:#fff;
+	}
+	
+</style>
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="https://mac.du.ac.in/images/logo.png" align="left"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="file:///C:/Users/LENOVO/Desktop/MAC%20clone/index.html">HOME</a></li>
+				<li><a href="file:///C:/Users/LENOVO/Desktop/MAC%20clone/about.html">ABOUT</a></li>
+				<li><a href="file:///C:/Users/LENOVO/Desktop/MAC%20clone/course.html">COURSE</a></li>
+				<li><a href="file:///C:/Users/LENOVO/Desktop/MAC%20clone/new%20NEP%20structure.HTML">New NEP Structure</a></li>
+				<li><a href="file:///C:/Users/LENOVO/Desktop/MAC%20clone/contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1 style="font-size:8vw"><u>About Us</u></h1>
+	</section>
+	
+	<!---------- about us content ---------->
+	
+	<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h1><u>Maharaja Agrasen College is affiliated with Delhi University</u></h1>
+			<P>Maharaja Agrasen College, established in 1994 as a constituent college ofthe University of Delhi has a story to tell...a success story. In the life span of an educational institution, twenty years may be just a tiny ray in the vast spectrum, but for Maharaja Agrasen College, the last two decades have been truly constructive, much like the building blocks. The blocks have been reconfigured time and again from simple structures to more comprehensive ones, in tandem with the emerging paradigms of the techno-savvy world of today. In August 1994, as a constituent college of the University of Delhi, the college was tentatively named Co-Educational College, later to be rechristened as Maharaja Agrasen College, after a great Indian ruler. Catering to the educational demands of the thickly populated East , the College is today attracting the student intelligentsia from various parts of Delhi, particularly the South and East Delhi areas.<br>
+
+Turning the time machine back to nursery days, one sees a tiny seed of an institution germinating, taking root and blossoming into a full-grown verdure plant. Completing 20 years in 2014, as it steps into its mature years, one finds it branching out in all spheres of holistic development of an individual, taking pride in providing socially relevant and innovative curriculum, out-of-the-box ideating platform for growth, and youthful energy to its students and faculty. Running 10 undergraduate programmes in all the three important streams: Arts, Commerce and Sciences, it nurtures interdisciplinarity and competency exchanges in the form of inter departmental research and outreach programmes.<br>
+
+'Tell me and I forget. Teach me and I remember. Involve me and I Learn.' These words seem to be the echo that resounds in every page of MAC. The veracity of this saying is nowhere better illustrated than in the classrooms of MAC because they are learner-centric. The thrust has always been on two-way communication: a process of building partnerships between the learner and the learned. It can be said that learning is no longer sacrosanct to be monasticated in a sanctuary of classrooms and library. It spills over in the lawns, on the stage and in playgrounds. In fact MAC can boast of 'classrooms without walls' as learning happens on field-based innovative research projects, adoption of villages such as Baroji and educational trips. Participation of the students in the extension activities of the college with vigour and enthusiasm has led to strong bonds between the residents of Baroji in Mewat District of Haryana; and the experiential Learning through The Leadership Development Program, an initiative of the NSS in the college has helped students work towards the upliftment of localities in the vicinity.</P>
+			<a href="https://mac.du.ac.in/About-MAC.php" class="hero-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			
+	</div>
+	</section>
+	
+	<!-------footer------->
+	<section class="footer">
+	<H2 style="color:#FFFFFF;"><PRE>  VISION</PRE></H2>
+	<p>Pursuit of knowledge, innovation and research through holistic and transformative education to nurture future leaders.</p>
+	  <i class="material-icons android">android </i> 
+      <i class="material-icons facebook">facebook</i>
+	<p>Made by <i>@Shagufta_Parveen</i></p>
+	</section>
+		
+	<!-------JavaScript for Toggle Menu------->
+	<script>
+	
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right="0";
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px";
+		}
+	</script>
+</body>
+</html>
